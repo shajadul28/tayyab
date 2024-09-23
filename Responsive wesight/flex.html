@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+<style>
+    
+   .container5{
+    display: flex;
+    gap: 30px;
+
+
+   }
+
+
+    .container2{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .box{
+        background-color:slateblue;
+        padding: 20px;
+        border-radius: 20px;
+ 
+    }
+    .item{
+        width: 200px;
+        height: 100px;
+        background-color: aquamarine;
+        border: 2px solid green;
+        
+
+    }
+    @media screen and(
+        max-width:576px
+    ) {.container5{
+        flex-direction: column;
+    }
+        
+    }
+</style>
+</head>
+<body>
+ <h2>Flexible Flex</h2> 
+ <div class="container5">
+ <div class=" box">
+   <h3>FIRST BOX</h3> <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur reprehenderit eius rerum praesentium quas quae libero dolore unde fugiat enim non, blanditiis doloribus maxime sapiente quis fuga tempora modi dolores!
+    </p>
+ </div>
+ <div class="  box">
+    <h3> second box</h3><p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum doloribus incidunt ipsa iusto molestiae odio quaerat esse doloremque iure eius, nesciunt deserunt. Voluptate modi dicta eum quos, quaerat quae ipsa?
+    </p>
+ </div>
+
+</div>
+<div>
+    <div class="container2">
+        <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+        <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+        <div class="item">item-9</div>
+        <div class="item">item-10</div>
+    </div>
+</div>
+</body>
+</html>
